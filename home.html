@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Docu</title>
+</head>
+<body>
+      <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Wed Travel creative</a>
+            </div>
+            <ul class="link">
+                <li><a href="hero">Home</a></li>
+                <li><a href="about">about</a></li>
+                <li><a href="Gallery">Gallery</a></li>
+                <li><a href="contact">contact</a></li>
+            </ul>
+            <a href="#" class="action_btn">Get started</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="hero">Home</a></li>
+            <li><a href="about">about</a></li>
+            <li><a href="Gallery">Gallery</a></li>
+            <li><a href="contact">contact</a></li>
+            <li><a href="#" class="action_btn">Get started</a></li> 
+            <main>
+                <br id="hero">
+                    <h1>Welcome</h1> <br>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At ad ab soluta aliquam 
+                     aliquid officia dolores vitae quis animi, nam ex deserunt illum iusto vero laboriosam, labore enim nostrum aperiam! </p></br>
+                </section>
+            </main>
+            <script>
+                const togglebtn = document.querySelector('.toggle_btn')
+                const togglebtnicon = document.querySelector('.toggle_btn.i')
+                const dropdownMenu = document.querySelector('.dropdown_menu')
+                togglebtn.onclick = function() {
+                dropdownMenu.classList.toggle('open')
+                const isOpen = dropdownMenu.classList.contains('open')
+                togglebtnicon.classList.contains = isOpen
+                ? 'fa-solid fa-bars'
+                : 'fa-solid fa-bars'
+            }
+            </script>
+        </div>
+      </header>
+</body>
+</html>
